@@ -1,0 +1,3 @@
+[submodule "gatsby-starter-textkit"]
+	path = gatsby-starter-textkit
+	url = git@github.com:Statflo/gatsby-starter-textkit.git
