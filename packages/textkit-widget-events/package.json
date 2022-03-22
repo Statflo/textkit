@@ -1,6 +1,6 @@
 {
     "name": "@statflo/textkit-widget-events",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "TextKit Events for Widgets",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -41,5 +41,6 @@
     },
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "355bd1ae680f2096f5847eaed37344f9dbbd9d53"
 }
