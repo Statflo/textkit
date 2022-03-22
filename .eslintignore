@@ -1,0 +1,6 @@
+dist
+node_modules
+coverage
+jest.setup.ts
+jest.config.js
+rollup.config.js

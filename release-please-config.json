@@ -1,0 +1,28 @@
+{
+  "draft": true,
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "separate-pull-requests": true,
+  "packages": {
+    "packages/textkit-widget-events": {
+      "release-type": "node",
+      "package-name": "@statflo/textkit-widget-events",
+      "draft": true,
+      "prerelease": false,
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true,
+      "changelog-path": "CHANGELOG.md",
+      "versioning": "default"
+    },
+    "packages/textkit-widget-sdk-react": {
+      "release-type": "node",
+      "package-name": "@statflo/textkit-widget-sdk-react",
+      "draft": true,
+      "prerelease": false,
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true,
+      "changelog-path": "CHANGELOG.md",
+      "versioning": "default"
+    }
+  }
+}
