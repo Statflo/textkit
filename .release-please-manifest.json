@@ -1,5 +1,4 @@
 {
-  ".": "0.0.0",
   "packages/textkit-widget-events": "1.0.0",
   "packages/textkit-widget-sdk-react": "1.0.0"
 }
