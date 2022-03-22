@@ -1,3 +1,5 @@
+import { Helpers, WidgetViewSize } from '@statflo/textkit-widget-events';
+
 import LargeContent from "./LargeContent";
 import MediumContent from "./MediumContent";
 import { TextKitWidgetProvider, useTextKitWidget } from "./Provider";
@@ -11,4 +13,6 @@ export {
     TextKitWidgetProviderProps,
     TextKitWidgetState,
     useTextKitWidget,
+    WidgetViewSize,
+    Helpers,
 }
