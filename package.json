@@ -18,7 +18,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "yarn workspaces run test",
-    "publish": "lerna run tsc && lerna publish from-package --yes"
+    "publish": "lerna run tsc && lerna publish from-git --yes"
   },
   "prettier": {
     "printWidth": 100,
