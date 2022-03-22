@@ -1,0 +1,45 @@
+{
+    "name": "@statflo/textkit-widget-events",
+    "version": "1.0.0",
+    "description": "TextKit Events for Widgets",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "author": "Statflo Inc.",
+    "license": "MIT",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Statflo/textkit.git",
+        "directory": "packages/textkit-widget-events"
+    },
+    "bugs": {
+        "url": "https://github.com/Statflo/textkit/issues"
+    },
+    "homepage": "https://github.com/Statflo/textkit/packages/textkit-widget-events#readme",
+    "files": [
+        "dist/**/*"
+    ],
+    "devDependencies": {
+        "@types/iframe-resizer": "^3.5.9"
+    },
+    "scripts": {
+        "build": "npx tsc",
+        "build:watch": "tsc --watch",
+        "lint": "yarn eslint . --ext .ts --quiet",
+        "test": "jest --config ../../jestconfig.json --passWithNoTests",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm test && npm run lint",
+        "preversion": "npm run lint",
+        "version": "git add -A src",
+        "postversion": "git push && git push --tags",
+        "test-coverage": "yarn test --coverage"
+    },
+    "dependencies": {
+        "@statflo/widget-sdk": "^0.3.2",
+        "iframe-resizer": "^4.3.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
