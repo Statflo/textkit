@@ -1,3 +1,4 @@
 {
-  ".": "0.0.0"
+  ".": "0.0.0",
+  "packages/textkit-widget-events": "1.0.0"
 }
