@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/Statflo/textkit/compare/textkit-widget-sdk-react-v1.1.0...textkit-widget-sdk-react-v1.1.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* fixing bug with widget state ([1190a9f](https://github.com/Statflo/textkit/commit/1190a9fb7fe101cbc5f96f57fe4f84e8719b7e2e))
+
 ## [1.1.0](https://github.com/Statflo/textkit/compare/textkit-widget-sdk-react-v1.0.0...textkit-widget-sdk-react-v1.1.0) (2022-03-22)
 
 
