@@ -1,6 +1,23 @@
 import 'iframe-resizer/js/iframeResizer.contentWindow.min.js';
 import { ContainerClient, Helpers, WidgetClient } from '@statflo/widget-sdk';
 
+export enum WidgetType {
+    Standard = "Standard",
+    Action = "Action",
+    Timeline = "Timeline",
+    Sendable = "Sendable",
+}
+
+export enum WidgetScope {
+    User = "user",
+    Conversation = "conversation",
+}
+
+export enum WidgetTabs {
+    Widget = "Widget",
+    Timeline = "Timeline",
+}
+
 export enum WidgetState {
     containerDomain = "containerDomain",
     footer = "footer",
