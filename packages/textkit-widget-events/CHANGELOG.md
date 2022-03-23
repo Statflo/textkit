@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Statflo/textkit/compare/textkit-widget-events-v1.0.0...textkit-widget-events-v1.1.0) (2022-03-23)
+
+
+### Features
+
+* adding type, scope and tabs to textkit-events ([d266990](https://github.com/Statflo/textkit/commit/d26699018d3e948d0a3da70f0bc6c8a28426c7d1))
+
 ## 1.0.0 (2022-03-22)
 
 
