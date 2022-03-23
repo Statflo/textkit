@@ -1,6 +1,6 @@
 {
   "name": "@statflo/textkit-widget-sdk-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TextKit Events for Widgets",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -52,7 +52,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@statflo/textkit-widget-events": "^1.0.0"
+    "@statflo/textkit-widget-events": "^1.1.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
