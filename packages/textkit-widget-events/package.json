@@ -1,6 +1,6 @@
 {
     "name": "@statflo/textkit-widget-events",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "TextKit Events for Widgets",
     "main": "./dist/index.js",
     "module": "./dist/index.js",

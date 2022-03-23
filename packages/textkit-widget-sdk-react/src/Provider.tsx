@@ -25,7 +25,6 @@ export function TextKitWidgetProvider({ footer, header, label, children, scrollO
     useEffect(() => {
         if (!state.isReady && window) {
             const id = window.name && window.name.length > 1 ? window.name : 'local';
-            console.log('init client', id);
             const widgetClient = new WidgetClient({
                 window,
                 id,
@@ -38,7 +37,6 @@ export function TextKitWidgetProvider({ footer, header, label, children, scrollO
     // Send the widget ready event and initialize event listeners
     useEffect(() => {
         if (client) {
-            console.log('init ready and listeners');
             client.setState(WidgetState.isReady, true);
             setState(currState => ({ ...currState, isReady: true }));
 
@@ -66,33 +64,36 @@ export function TextKitWidgetProvider({ footer, header, label, children, scrollO
             client.on(
                 Helpers.ContainerMethods.setState,
                 (e) => {
-                    console.log('stateChange');
                     const { property, value } = e.payload;
                     setState(currState => ({ ...currState, ...{ [property]: value } }))
                 }
             );
         }
-         
     }, [client]);
 
     // Widget Context Properties
     const context = useMemo<TextKitContextProps>(() => ({
         client,
         state,
-        setFooter: (val) => {
-            client?.setState(WidgetState.footer, val);
+        setFooter: (footer) => {
+            client?.setState(WidgetState.footer, footer);
+            setState(currState => ({ ...currState, footer }));
         },
-        setHeader: (val) => {
-            client?.setState(WidgetState.header, val);
+        setHeader: (header) => {
+            client?.setState(WidgetState.header, header);
+            setState(currState => ({ ...currState, header }));
         },
-        setLabel: (val) => {
-            client?.setState(WidgetState.label, val);
+        setLabel: (label) => {
+            client?.setState(WidgetState.label, label);
+            setState(currState => ({ ...currState, label }));
         },
-        setOpen: (ToF) => {
-            client?.setState(WidgetState.isOpen, ToF);
+        setOpen: (isOpen) => {
+            client?.setState(WidgetState.isOpen, isOpen);
+            setState(currState => ({ ...currState, isOpen }));
         },
         setSize: (size) => {
             client?.setState(WidgetState.size, size);
+            setState(currState => ({ ...currState, size }));
         },
         appendMessage: (val) => {
             client?.post(EventNames.widget.appendTextToMessage, val);
